@@ -119,6 +119,36 @@ new Chart('lineChart2', {
     }
   }
   });
+
+  new Chart ('pieChart',{
+      type:'pie',
+      data :{
+        datasets: [{ data: [10, 20, 30],
+            backgroundColor:[
+                'rgba(225, 20, 20, 1)',
+                'rgba(225, 215, 20, 1)',
+                'rgba(20, 133, 225, 1)'
+                ],
+                hoverBackgroundColor:[
+                 'rgba(225, 20, 20, .5)',
+                'rgba(225, 215, 20, 0.5)',
+                'rgba(20, 133, 225, 0.5)'
+                ]
+
+            },
+            
+    ],
+   
+    
+        labels: [
+            'Red',
+            'Yellow',
+            'Blue'
+        ],
+       
+    },
+    options: {}
+  })
   
   
   
